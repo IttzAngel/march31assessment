@@ -5,7 +5,7 @@ public class Hourly {
 
     public int ID;
 
-    public int hourlyRate = 20;
+    public int hourlyRate = 15;
 
     public int hoursWorked = 40;
 

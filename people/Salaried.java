@@ -21,7 +21,7 @@ public class Salaried {
     }
 
     public int salaryEmployeePay(){
-        return 80000 / 52;
+        return 104000 / 52;
     }
 
 }
