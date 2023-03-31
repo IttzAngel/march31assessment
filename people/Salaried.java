@@ -4,7 +4,7 @@ public class Salaried {
 
     public int ID;
 
-    public static int uniqueID = 0;
+    public static int uniqueID = 1;
 
     public String name;
 
