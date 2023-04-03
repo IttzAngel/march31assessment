@@ -1,6 +1,6 @@
 package people;
 
-public class Entrepreneurs {
+public class Entrepreneurs extends Employee{
 
     public Entrepreneurs(String name){
 

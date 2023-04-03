@@ -1,15 +1,15 @@
 package people;
 
-public class Hourly {
+public class Hourly extends Employee{
 
 
-    public int ID;
+    private int ID;
 
-    public int hourlyRate = 15;
+    private int hourlyRate = 15;
 
-    public int hoursWorked = 40;
+    private int hoursWorked = 40;
 
-    public static int uniqueID = 0;
+    private static int uniqueID = 0;
 
     public String name;
 

@@ -1,12 +1,12 @@
 package people;
 
-public class Salaried {
+public class Salaried extends Employee{
 
-    public int ID;
+    private int ID;
 
-    public static int uniqueID = 1;
+    private static int uniqueID = 1;
 
-    public String name;
+    private String name;
 
     public Salaried (String name){
         ID = ++uniqueID;
