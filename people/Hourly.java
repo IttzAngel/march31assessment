@@ -1,32 +1,23 @@
 package people;
 
-public class Hourly extends Employee{
+public class Hourly extends Employee implements Worker{
 
 
-    private int ID;
+    private double hourlyRate;
 
-    private int hourlyRate = 15;
+    private double hoursWorked;
 
-    private int hoursWorked = 40;
-
-    private static int uniqueID = 0;
-
-    public String name;
-
-    public Hourly (String name){
-        ID = ++uniqueID;
-        this.name = name;
+    public Hourly(String name, double hourlyRate, double hoursWorked) {
+        super(name);
+        this.hourlyRate = hourlyRate;
+        this.hoursWorked = hoursWorked;
     }
 
-    public String printName(){
-        return name;
-    }
-    public int printBadge() {
-        return ID;
+    @Override
+    public void calculatePay() {
+        System.out.println("Hourly Employee's pay is " + hourlyRate * hoursWorked);
     }
 
-    public int hourlyEmployeePay(){
-        return hourlyRate * hoursWorked;
 
-    }
+
 }

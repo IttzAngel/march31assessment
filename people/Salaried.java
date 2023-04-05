@@ -1,27 +1,43 @@
 package people;
 
-public class Salaried extends Employee{
+public class Salaried extends Employee implements Worker{
 
-    private int ID;
+    private double salary;
 
-    private static int uniqueID = 1;
-
-    private String name;
-
-    public Salaried (String name){
-        ID = ++uniqueID;
-        this.name = name;
+    public Salaried(String name, int salary) {
+        super(name);
+        this.salary = salary / 52;
     }
 
-    public String printName(){
-        return name;
-    }
-    public int printBadge() {
-        return ID;
+    @Override
+    public void calculatePay() {
+        System.out.println("Salaried Employee's pay is: " + salary);
     }
 
-    public int salaryEmployeePay(){
-        return 104000 / 52;
-    }
+
+
+//    private int ID;
+//
+//    private static int uniqueID = 1;
+//
+//    private String name;
+//
+////    public Salaried (String name){
+////        ID = ++uniqueID;
+////        this.name = name;
+////    }
+//
+//    public String printName(){
+//        return name;
+//    }
+//    public int printBadge() {
+//        return ID;
+//    }
+//
+//    public int salaryEmployeePay(){
+//        return 104000 / 52;
+//    }
+
+
 
 }

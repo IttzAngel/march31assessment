@@ -1,8 +1,6 @@
 package people;
 
-public class Entrepreneurs extends Employee{
+//public class Entrepreneurs extends Person implements Worker{
 
-    public Entrepreneurs(String name){
 
-    }
-}
+//}
